@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emilly Colucci • Estética Integrativa</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg: #f4efe9;
+        --card: #ffffff;
+        --gold: #c39a5b;
+        --gold-dark: #a9824a;
+        --text: #2b2b2b;
+        --muted: #8c8c8c;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        background: var(--bg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+        color: var(--text);
+        padding: 20px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 420px;
+        background: var(--card);
+        border-radius: 28px;
+        padding: 32px 24px;
+        text-align: center;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      }
+
+      .logo img {
+        max-width: 250px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 26px;
+        margin-bottom: 6px;
+      }
+
+      h2 {
+        font-size: 13px;
+        letter-spacing: 2px;
+        color: var(--muted);
+        font-weight: 500;
+        margin-bottom: 28px;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 14px;
+        border-radius: 14px;
+        text-decoration: none;
+        font-weight: 600;
+        margin-bottom: 14px;
+        transition: all 0.25s ease;
+      }
+
+      .btn-primary {
+        background: var(--gold);
+        color: #fff;
+        box-shadow: 0 8px 20px rgba(195, 154, 91, 0.35);
+      }
+
+      .btn-primary:hover {
+        background: var(--gold-dark);
+        transform: translateY(-2px);
+      }
+
+      .btn-outline {
+        border: 1.5px solid var(--gold);
+        color: var(--gold);
+        background: transparent;
+      }
+
+      .btn-outline:hover {
+        background: rgba(195, 154, 91, 0.08);
+        transform: translateY(-2px);
+      }
+
+      .social {
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+      }
+
+      .social a {
+        text-decoration: none;
+        color: var(--gold);
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      footer {
+        margin-top: 28px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      /* Responsivo desktop */
+      @media (min-width: 768px) {
+        body {
+          padding: 40px;
+        }
+
+        .container {
+          max-width: 460px;
+          padding: 40px 32px;
+        }
+
+        h1 {
+          font-size: 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="logo">
+        <img
+          src="logo-sem-fundo.png"
+          alt="Emilly Colucci Estética Integrativa"
+        />
+      </div>
+
+      <a href="https://wa.me/5519987304780" class="btn btn-primary">
+        Agendar atendimento
+      </a>
+
+      <!--<a href="#" class="btn btn-outline">
+      Cursos & Mentorias
+    </a>
+
+    <a href="#" class="btn btn-outline">
+      Grupo VIP
+    </a>-->
+
+      <a
+        href="https://maps.app.goo.gl/hU5VAFDRAQzjratV8"
+        class="btn btn-outline"
+      >
+        Localização
+      </a>
+
+      <a
+        href="https://www.instagram.com/estetica.emillycolucci/"
+        class="btn btn-outline"
+      >
+        Instagram
+      </a>
+
+      <footer>© 2026 • Emilly Colucci</footer>
+    </main>
+  </body>
+</html>
